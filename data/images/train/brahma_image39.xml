@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>brahma_image39.jpg</filename>
+	<path>/content/drive/MyDrive/tensorflow-beer/data/images/train/brahma_image39.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>270</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>duplo_malte</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>99</xmin>
+			<ymin>118</ymin>
+			<xmax>167</xmax>
+			<ymax>188</ymax>
+		</bndbox>
+	</object>
+</annotation>

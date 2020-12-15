@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>duplo_malte001.jpg</filename>
+	<path>C:/content/drive/MyDrive/tensorflow-beer/data/images/train/duplo_malte001.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>270</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>duplo_malte</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>128</xmin>
+			<ymin>90</ymin>
+			<xmax>197</xmax>
+			<ymax>214</ymax>
+		</bndbox>
+	</object>
+</annotation>
