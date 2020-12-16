@@ -90,4 +90,4 @@ Por fim, criamos de forma manual o ultimo arquivo, chamado de `label_map.pbtxt`,
 Caso seu modelo seja multiclasses, esse arquivo terá as mesmas quantidade de classes.
 Portanto, finalizamos a parte de estruturação de arquivos, agora devemos armazenar os arquivos em lugares corretos. Entao, os arquivos `CSVs, record e pbtxt` serão armazenados dentro da pasta `./data/annotations`.
 
-### 5 - 
+Para executarmos esse modelo no GOOGLE COLAB seguindo esses tutorial e o notebook ja pronto. Conseguiremos realizar o treinamento com exito.
