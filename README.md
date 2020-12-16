@@ -9,32 +9,31 @@ Antes de tudo selecionamos as imagens dos objetos que desejamos treinar o modelo
 
 ### 2 -  Rotulando os objetos nas imagens
 O segundo passo depois de prepararmos as imagens é rotularmos os objetos e assim criarmos os arquivos `.xml`, ou melhor dizendo, os arquivos `pascalvoc`. Temos duas opções para criarmos esses arquivos.
-* Opção 1 - A primeira opção é utilizar o script `opencv_object_tracking.py` para rastrearmos os objetos atraves de imagens ou videos e partir dele criarmos os arquivos `pascalvoc`, para isso utilizamos a linha de comando, onde você pode utilizar o comando `--video` se voce deseja rastrar objetos e criar samples a partir de videos. Caso deseja rastrear a partir de imagens, você poderá utilizar o camando `--imagesdirectory`.
+**Opção 1** - A primeira opção é utilizar o script `opencv_object_tracking.py` para rastrearmos os objetos atraves de imagens ou videos e partir dele criarmos os arquivos `pascalvoc`, para isso utilizamos a linha de comando, onde você pode utilizar o comando `--video` se voce deseja rastrar objetos e criar samples a partir de videos. Caso deseja rastrear a partir de imagens, você poderá utilizar o camando `--imagesdirectory`.
 ```
 python opencv_object_tracking.py --video da --tracker csrt --vocxml True
 ```
 **Ao executr o comando de video para fazer a marcação da caixa delimitadora no objeto, recisa precionar a tecla `W`**
 
-* Opção 2 - A segunda opção pode ser a melhor quando se referimos em detectar objetos em imagens e não em videos. Nessa segunda opção, utilzariamos o **LabelImg**.  LabelImg é uma ótima ferramenta para rotular imagens e sua página GitHub tem instruções muito claras sobre como instalar e usar.
-
-LabelImg GitHub link](https://github.com/tzutalin/labelImg)
-
+**Opção 2** - A segunda opção pode ser a melhor quando se referimos em detectar objetos em imagens e não em videos. Nessa segunda opção, utilzariamos o **LabelImg**.  LabelImg é uma ótima ferramenta para rotular imagens e sua página GitHub tem instruções muito claras sobre como instalar e usar.
+[LabelImg GitHub link](https://github.com/tzutalin/labelImg)
 [LabelImg download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1)
 
+Baixe e instale LabelImg, aponte-o para o diretório data\images\train e desenhe uma caixa ao redor de cada objeto em cada imagem. Repita o processo para todas as imagens no diretório data\images\test.
+
 Os nomes dos arquivos `.xml` necessitam ter o mesmo nome das imagens que referenciam. Por exemplo: Suponhamos que você deseja treinar um modelo que detecta 2 classes:
-* **classe 1: cachorro** 
-* **classe 2: gato**
+**classe 1: cachorro** 
+**classe 2: gato**
 
 Assim, os arquivos serão organizados dessa forma:
-* **cachorro_1.png, cachorro_1.xml, ..., cachorro_N.jpg, cachorro_N.xml.** 
-* **gato_1.png, gato_1.xml, ..., gato_n.jpg, gato_n.xml.**
-
+**cachorro_1.png, cachorro_1.xml, ..., cachorro_N.jpg, cachorro_N.xml.** 
+**gato_1.png, gato_1.xml, ..., gato_n.jpg, gato_n.xml.**
 e assim por diante.
 
 ### 3 -  Organizando em pastas
 Depois de completar o passo 2 em todas as imagens criadas, armazenaremos as imagens e os arquivos .xml em uma unica pasta. ou seja, criaremos uma pasta chamada `data`. Depois, criaremos treis subpastas.
-* **data/imagens** - Onde armazenará as pastas train e test.
-- **data/imagens/train e data/imagens/test** - De forma intercalada ambas as pastar terão os dados armazenados na seginte forma: 
+**data/imagens** - Onde armazenará as pastas train e test.
+**data/imagens/train e data/imagens/test** - De forma intercalada ambas as pastar terão os dados armazenados na seginte forma: 
 ```
   cachorro_1.jpg
   cachorro_1.xml
