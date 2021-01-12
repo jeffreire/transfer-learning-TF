@@ -117,7 +117,7 @@ Já o arquivo `label_map.pbtxt` será armazenado dentro da pasta `training/`:
 ### 4 - Obter o Modelo
 
 Nesse exemplo estamos utilizando o modelob faster_rcnn_inception_v2_coco_2018_01_28, então, para obter-lo, acesse: 
-[![faster__rcnn__inception__v2__coco-tensorflow--1.15](https://img.shields.io/badge/faster__rcnn__inception__v2__coco-tensorflow--1.15-blue?style=for-the-badge&logo=tensorflow&logoColor=white)]http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+[![faster__rcnn__inception__v2__coco-tensorflow--1.15](https://img.shields.io/badge/faster__rcnn__inception__v2__coco-tensorflow--1.15-blue?style=for-the-badge&logo=tensorflow&logoColor=white)](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz)
 
 Ao baixar, extráia o arquivo no diretório `research\object_detection\` e assim etará pronto.
 
