@@ -164,12 +164,8 @@ eval_input_reader: {
   }
   label_map_path: "PATH_TO_BE_CONFIGURED/pet_label_map.pbtxt"
 ```
-- [ ] \(Na linha 123 a variavél `input_path: `receberá o diretório do arquivo `train.record`.)
-- [ ] \(Na linha 125 a variavél `label_map_path: ` receberá o diretório do arquivo `label_map.pbtxt"`.)
-- [ ] \(Na linha 135 a variavél `input_path: ` receberá o diretório do arquivo `test.record`.)
-- [ ] \(Na linha 137 a variavél `label_map_path: ` receberá o diretório do arquivo `label_map.pbtxt"`.)
+- [x] \(Na linha 123 a variavél `input_path: `receberá o diretório do arquivo `train.record`.)
+- [x] \(Na linha 125 a variavél `label_map_path: ` receberá o diretório do arquivo `label_map.pbtxt"`.)
+- [x] \(Na linha 135 a variavél `input_path: ` receberá o diretório do arquivo `test.record`.)
+- [x] \(Na linha 137 a variavél `label_map_path: ` receberá o diretório do arquivo `label_map.pbtxt"`.)
 
-
-Para executarmos e
-
-sse modelo no GOOGLE COLAB seguindo esses tutorial e o notebook ja pronto. Conseguiremos realizar o treinamento com exito.
