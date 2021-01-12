@@ -169,3 +169,26 @@ eval_input_reader: {
 - [x] \(Na linha 135 a variavél `input_path: ` receberá o diretório do arquivo `test.record`.)
 - [x] \(Na linha 137 a variavél `label_map_path: ` receberá o diretório do arquivo `label_map.pbtxt"`.)
 
+# Iniciando o Treinamento do Modelo
+
+Enfim, depois de pra´pararmos todo o nossas imagens, arquivos e modelos, agorea é hora de testar o nosso modelo e ve se realmente vai desenvolver um bom desempenho no treinamento. 
+
+Para treinar o modelo, dentro da pasta `object_detection/` abra o terminal e execute:
+```
+$ train.py --logtostdeer --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+```
+
+Se tudo ocorreu bem, o treinamneto do seu modelo foi um sucesso.
+
+# Exportando inference graph
+
+Depois de treinarmos o nosso modelo, devemos entao exportar o a inference graph, e para isso, execute o seguinte comando: 
+```
+python export_inference_graph.py --input_type image_tensor /
+                                 --pipeline_config_path training/faster_rcnn_inception_v2_pets.config /
+                                 --trained_checkpoint_prefix training/model.ckpt-xxxx /
+                                 --output_directory inference_graph
+```
+**Atenção** que no comando `model.ckpt-xxxx` onde está os `xxxx` irá o número do arquivo que seu modelo irá gerar, e para descobrir, vá atá a pasta `training/` e obtenha o arquivo `model.ckpt-` de maior numero e anote no lugar do `XXXX`.
+
+Ao executar esse comando, surgirá dentro da sua pasta `models/research/object_detection/` uma pasta chamada de `inference_graph` nela constará todos os arquivos gerados do treinamento.
