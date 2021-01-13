@@ -192,3 +192,9 @@ python export_inference_graph.py --input_type image_tensor /
 **Atenção** que no comando `model.ckpt-xxxx` onde está os `xxxx` irá o número do arquivo que seu modelo irá gerar, e para descobrir, vá atá a pasta `training/` e obtenha o arquivo `model.ckpt-` de maior numero e anote no lugar do `XXXX`.
 
 Ao executar esse comando, surgirá dentro da sua pasta `models/research/object_detection/` uma pasta chamada de `inference_graph` nela constará todos os arquivos gerados do treinamento.
+
+
+
+Para realizar o teste do treinamneto com o arquivo salvo.... acesse:
+
+[![GOOGLE-COLAB](https://img.shields.io/badge/GOOGLE-COLAB-yellow?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1vsm8vaViIxWaJOL3-umoxcMUHmG1QuX8#scrollTo=cfn_tRFOWKMO)
