@@ -121,6 +121,8 @@ Nesse exemplo estamos utilizando o modelob faster_rcnn_inception_v2_coco_2018_01
 
 Ao baixar, extráia o arquivo no diretório `research\object_detection\` e assim etará pronto.
 
+Dentro do diretório `models\research\object_detection\samples\configs` esta armazenado o arquivo `faster_rcnn_inception_v2_pets.config`.
+
 ### 5 - Alterando o arquivo faster_rcnn_inception_v2_pets.config
 O arquivo que estou usando como exemplo é o `faster_rcnn_inception_v2_pets.config` mas indepedente do arquivo que você usa, fique atento a essas mudanças:
 
