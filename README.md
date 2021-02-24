@@ -1,6 +1,5 @@
 [![Python 3.7.9](https://img.shields.io/badge/python-3.7.9-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)
 [![Tensorflow 1.15](https://img.shields.io/badge/tensorflow-1.15-orange.svg?style=for-the-badge&logo=tensorflow&logoColor=white)](https://pypi.org/project/tensorflow/1.15.0/)
-[![Ambev-tech](https://img.shields.io/badge/Ambev--tech-2021-yellow.svg?style=for-the-badge)](https://ambevtech.gupy.io/)
 ![OWL](https://img.shields.io/badge/OWL-1.0-brown?style=for-the-badge&logo=OWL&logoColor=white)
 
 
